@@ -1,0 +1,16 @@
+title: 坚实的积分就是
+description: 实验
+template:
+  repo: '-template'
+  name: ''
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
